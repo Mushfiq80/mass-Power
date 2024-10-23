@@ -11,6 +11,8 @@
     --clr-primary: #E6533C;
     --clr-bg: #000;
     --font-white: #FFFF;
+    --font-grey: #FFFFFF80;
+    --bg-grey: #222222;
 
 }
 
@@ -44,7 +46,8 @@ body {
 /* ----------- Header section ---------  */
 header {
     background: linear-gradient(to bottom, #000, #131313, #2c2c2c);
-
+    /* max-height: 715px; */
+    
 }
 
 nav {
@@ -101,20 +104,31 @@ nav ul {
 
 .hero-left p {
     font-size: 18px;
-    color: #CCCCCC;
+    color: var(--font-grey);
 }
 
 .hero-right{
     color: #FFFFFF;
 }
-.tab{
+.tab1, .tab2{
     /* border: 2px solid red; */
     background: rgba(87, 83, 83, 0.308);
     max-width: 193px;
     border-radius: 10px;
     padding: 16px 24px;
-    /* background-color: rgba(0, 0, 0, 0.1); */
-    
+    /* background-color: rgba(0, 0, 0, 0.1); */   
+}
+.tab1{
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 200px;
+    /* width: 100%; */
+}
+.tab2{
+    position: absolute;
+    margin-top: 400px;
+    margin-right: 500px;
+    /* width: 100%; */
 }
 .hero-right h2{
     /* color: var(--font-white);
@@ -124,6 +138,7 @@ nav ul {
 }
 .hero-right p{
     margin-top: 0;
+    font-size: 14px;
 }
 .bottom-tab{
     display: flex;
@@ -131,3 +146,124 @@ nav ul {
     align-items: center;
     /* background-color: rgba(0, 0, 0, 0.1); */
 }
+ .hero-right img{
+    width: 100%;
+ }
+
+
+ /* Main code  */
+main{
+    background-color: var(--clr-bg);
+    color: #FFFFFF;
+    /* margin-top: -25px; */
+}
+
+main section{
+    max-width: 1060px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+.habit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.habit >h1{
+    font-size: 3rem;
+    margin-bottom: 14px;
+}
+.habit h2{
+    font-weight: 400;
+    margin-bottom: -10px;
+}
+.habit p{
+    margin-bottom: 58px;
+    color: var(--font-grey);
+}
+
+.Card-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card img{
+    border-radius: 50%;
+}
+
+/* Extra Mile Section  */
+
+.Extra-mile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    /* border: 2px solid red; */
+    background-color: var(--bg-grey);
+    border-radius: 10px;
+}
+.extra-text{
+    width: 412px;
+    padding-left: 20px;
+}
+.extra-text h1{
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 14px;
+}
+.extra-text p{
+    color: var(--font-grey);
+}
+
+.extra-pic {
+    max-width: 366px;
+    max-height: 312px;
+    overflow: hidden;
+}
+
+.extra-pic img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+/* Team section  */
+.Team{
+    margin-top: 80px;
+}
+
+.trainer-card h1{
+    margin-bottom: -12px;
+}
+
+.trainer-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1060px;
+    margin: 0 auto;
+    background-color: var(--bg-grey);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Card picture  */
+.trainer-card img{
+    width: 100%;
+    opacity: 80%;
+    border-radius: 10px;
+}
+.trainer-card{
+    position: relative;
+    color: #FFFFFF;
+    
+    
+}
+.bottom-left{
+    position: absolute;
+    bottom: 15px;
+    left: 16px;
+}
+
