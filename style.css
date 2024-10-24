@@ -36,6 +36,9 @@
     background-clip: text;
 }
 
+.btn-primary{
+    
+}
 
 /* ---------------------Ends here common styles-----------------  */
 
@@ -48,7 +51,7 @@ body {
 header {
     background: linear-gradient(to bottom, #000, #131313, #2c2c2c);
     /* max-height: 715px; */
-    
+
 }
 
 nav {
@@ -108,94 +111,106 @@ nav ul {
     color: var(--font-grey);
 }
 
-.hero-right{
+.hero-right {
     color: #FFFFFF;
 }
-.tab1, .tab2{
+
+.tab1,
+.tab2 {
     /* border: 2px solid red; */
     background: rgba(87, 83, 83, 0.308);
     max-width: 193px;
     border-radius: 10px;
     padding: 16px 24px;
-    /* background-color: rgba(0, 0, 0, 0.1); */   
+    /* background-color: rgba(0, 0, 0, 0.1); */
 }
-.tab1{
+
+.tab1 {
     position: absolute;
     margin-top: 200px;
     margin-left: 200px;
     /* width: 100%; */
 }
-.tab2{
+
+.tab2 {
     position: absolute;
     margin-top: 400px;
     margin-right: 500px;
     /* width: 100%; */
 }
-.hero-right h2{
+
+.hero-right h2 {
     /* color: var(--font-white);
     z-index: 1; */
     font-size: 40px;
     margin: 0 0;
 }
-.hero-right p{
+
+.hero-right p {
     margin-top: 0;
     font-size: 14px;
 }
-.bottom-tab{
+
+.bottom-tab {
     display: flex;
     gap: 10px;
     align-items: center;
     /* background-color: rgba(0, 0, 0, 0.1); */
 }
- .hero-right img{
+
+.hero-right img {
     width: 100%;
- }
+}
 
 
- /* Main code  */
-main{
+/* Main code  */
+main {
     background-color: var(--clr-bg);
     color: #FFFFFF;
     /* margin-top: -25px; */
 }
 
-main section{
+main section {
     max-width: 1060px;
     margin: 0 auto;
     padding-bottom: 80px;
 }
-.habit{
+
+.habit {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.habit >h1{
+
+.habit>h1 {
     font-size: 3rem;
     margin-bottom: 14px;
 }
-.habit h2{
+
+.habit h2 {
     font-weight: 400;
     margin-bottom: -10px;
 }
-.habit p{
+
+.habit p {
     margin-bottom: 58px;
     color: var(--font-grey);
 }
 
-.Card-items{
+.Card-items {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-.card img{
+.card img {
     border-radius: 50%;
 }
 
 /* Extra Mile Section  */
 
-.Extra-mile{
+.Extra-mile {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -204,16 +219,19 @@ main section{
     background-color: var(--bg-grey);
     border-radius: 10px;
 }
-.extra-text{
+
+.extra-text {
     width: 412px;
     padding-left: 20px;
 }
-.extra-text h1{
+
+.extra-text h1 {
     font-size: 3rem;
     font-weight: 800;
     margin-bottom: 14px;
 }
-.extra-text p{
+
+.extra-text p {
     color: var(--font-grey);
 }
 
@@ -231,17 +249,20 @@ main section{
 }
 
 /* BMI Section  */
-.BMI{
+.BMI {
     margin-top: 80px;
     text-align: center;
 }
-.BMI h1{
+
+.BMI h1 {
     font-size: 2.75rem;
 }
-.BMI p{
-    color: var(--font-grey );
+
+.BMI p {
+    color: var(--font-grey);
 }
-.bmi-main{
+
+.bmi-main {
     display: flex;
     justify-content: center;
     gap: 185px;
@@ -251,92 +272,108 @@ main section{
     /* max-width: none; */
     border-radius: 10px;
 }
-.bmi-chart{
+
+.bmi-chart {
     max-width: 310px;
 }
-.bmi-chart h2{
+
+.bmi-chart h2 {
     margin-bottom: 52px;
 }
+
 /* .bmi-calc{
     max-width: 570px;
 } */
-.bmi-calc h2{
+.bmi-calc h2 {
     margin-bottom: -10px;
 }
-.tb-value{
+
+/* Chart  */
+.tb-value {
     color: var(--font-grey);
 }
-table, th, td {
+
+table,
+th,
+td {
     border: 1px solid var(--font-grey);
     border-collapse: collapse;
     padding: 10px;
 }
-/* form input{
-    margin-bottom: 10px;
-    color: var(--font-grey);
-    background-color: #2c2c2c;
-    width: 250px;
-    height: 48px;
-    display: flex;
-
-} */
-
 
 /* form  */
+
 .custom-form {
-    width: 100%; /* Full width form */
+    width: 100%;
 }
 
 .form-row {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 15px; /* Adds space between rows */
+    margin-bottom: 15px;
 }
 
-.form-row input, .form-row select {
+.form-row input,
+.form-row select {
     width: calc(50% - 10px);
     height: 48px;
-    padding: 5px; 
+    padding: 5px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #2b2b2b;
     color: #ffffff;
-    box-sizing: border-box; 
+    box-sizing: border-box;
+}
+
+.row-full select{
+    height: 48px;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #2b2b2b;
+    /* color: #ffffff; */
+    box-sizing: border-box;
+    margin-bottom: 20px;
 }
 
 .full-width {
     width: 100%;
 }
 
-input::placeholder, select:invalid {
+input::placeholder,
+select:invalid {
     color: var(--font-grey);
 }
 
 
 
 /* Team section  */
-.Team{
+.Team {
     margin-top: 80px;
     display: flex;
     flex-direction: column;
     /* justify-items: center; */
     align-items: center;
 }
-.Team h1{
+
+.Team h1 {
     font-size: 2.75rem;
     margin-bottom: 10px;
 }
-.Team p{
+
+.Team p {
     color: var(--font-grey);
     width: 580px;
     text-align: center;
 }
 
-.trainer-card h1{
+.trainer-card h1 {
     margin-bottom: -12px;
 }
-.trainer-section{
+
+.trainer-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -348,67 +385,77 @@ input::placeholder, select:invalid {
 }
 
 /* Card picture  */
-.trainer-card img{
+.trainer-card img {
     width: 100%;
     height: 272px;
     opacity: 80%;
     border-radius: 10px;
     object-fit: cover;
 }
-.trainer-card{
+
+.trainer-card {
     position: relative;
-    color: #FFFFFF;   
+    color: #FFFFFF;
 }
-.bottom-left{
+
+.bottom-left {
     position: absolute;
     bottom: 15px;
     left: 16px;
     font-weight: 700;
 }
-.tariner-text{
+
+.tariner-text {
     font-weight: 400;
 }
 
 
 /* footer  */
-footer{
+footer {
     background-color: var(--bg-grey);
     color: var(--font-white);
 }
-.footer-detail{
+
+.footer-detail {
     display: flex;
     justify-content: space-around;
 }
-.footer-main{
+
+.footer-main {
     width: 444px;
 }
-.footer-main h1{
+
+.footer-main h1 {
     font-style: italic;
     font-weight: 800;
     font-size: 3rem;
     color: var(--clr-primary);
     margin-bottom: 20px;
 }
-.footer-main p{
+
+.footer-main p {
     color: var(--font-grey);
 }
-.footer-detail{
+
+.footer-detail {
     max-width: 1060px;
     margin: 0 auto;
     padding-top: 66px;
     padding-bottom: 66px;
 }
 
-.start h2{
+.start h2 {
     margin-left: 40px;
     font-weight: 400;
 }
-.start li{
+
+.start li {
     list-style-type: none;
     margin-bottom: 20px;
     color: var(--font-grey);
 }
-.legal-right{
+
+.legal-right {
     text-align: center;
     color: var(--font-grey);
     max-width: 1060px;
