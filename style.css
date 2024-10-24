@@ -69,7 +69,13 @@ header {
     /* max-height: 715px; */
 
 }
-
+.hamB{
+    width: 20px;
+    height: 20px;
+    margin-top: 15px;
+    /* background-color: #FFFFFF; */
+    display: none;
+}
 nav {
     display: flex;
     align-items: center;
@@ -100,6 +106,7 @@ nav ul {
     border: .5px solid silver;
     padding-right: 10px;
     border-radius: 40px;
+    display: flex;
 }
 
 .title-main {
@@ -439,6 +446,67 @@ select:invalid {
     font-weight: 400;
 }
 
+/* ************************New Section_____________________ */
+.why-choose-us {
+    text-align: center;
+    padding: 50px;
+    background-color: var(--bg-grey);
+    /* margin: 0 auto; */
+}
+
+.why-choose-us h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.why-choose-us p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    color: var(--font-grey);
+}
+
+.app-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    place-items: center;
+}
+
+.approach {
+    background-color: var(--clr-bg);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    background-color: var(--clr-primary);
+    border-radius: 50%;
+}
+
+.content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.4;
+}
+
+
+
+
+
+
 
 /* footer  */
 footer {
@@ -503,6 +571,10 @@ footer {
     nav .nav-border{
         display: none;
     }
+    .hamB{
+        display: block;
+        margin-right: 10px;
+    }
     
     /* hero section  */
     .hero-section{
@@ -521,6 +593,9 @@ footer {
     .Extra-mile{
         flex-direction: column;
         text-align: center;
+    }
+    .extra-text p{
+        width: 400px;
     }
     .extra-text{
         margin-bottom: 16px;
@@ -544,5 +619,8 @@ footer {
     }
     .trainer-section{
         padding: 10px;
+    }
+    .app-container{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
